@@ -1,0 +1,12 @@
+$color1: #39f;
+
+body {
+    height: 100vh;
+    // background-image: url(../img/background.jpg);
+    background-color: $color1;
+}
+
+.login-container {
+    min-width: 300px;
+    max-width: 400px;
+}

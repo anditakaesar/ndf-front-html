@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(href="css/vendor/uikit.min.css", rel="stylesheet")
+        // custom css
+        link(href="css/default.css", rel="stylesheet")
+        
+        script(src="js/vendor/uikit.min.js")
+        script(src="js/vendor/uikit-icons.min.js")
+
+        // custom js
+        script(src="js/plugin.js")
+        
+    body
+        .uk-container.uk-container-expand.uk-position-center.uk-flex.uk-flex-center.uk-text-center
+            .login-container
+                .uk-card.uk-card-default
+                    .uk-card-body
+                        form(action="/" method="get")
+                            h3 Please Login
+                            input.uk-input.uk-margin-small(type="text" name="username" placeholder="username")
+                            input.uk-input.uk-margin-small(type="password" name="password" placeholder="password")
+                            .uk-margin-small
+                                button.uk-button.uk-button-primary Login
+                                a.uk-button.uk-button-default.uk-margin-left(href="#") Sign Up
