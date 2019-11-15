@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(href="css/vendor/uikit.min.css", rel="stylesheet")
+        // custom css
+        link(href="css/default.css", rel="stylesheet")
+        
+        script(src="js/vendor/uikit.min.js")
+        script(src="js/vendor/uikit-icons.min.js")
+
+        // custom js
+        script(src="js/plugin.js")
+        
+    body
+        nav.uk-navbar-container(uk-navbar)
+            .uk-navbar-left
+                ul.uk-navbar-nav
+                    li.uk-active
+                        a(href="admin.html") Admin Page
+                    li
+                        a(href="store.html") Store List
+                    li
+                        a(href="member.html") Member List
+                    li
+                        a(href="profile.html") Profile
+                    li
+                        a(href="/") Login
+        .uk-container.uk-container-expand#main-container
+            .uk-card.uk-card-default.uk-margin
+                div hello
